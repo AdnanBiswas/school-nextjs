@@ -1,0 +1,15 @@
+.headTeacher img {
+	max-width: 100%;
+}
+
+.headTeacherName {
+	padding-top: 12px;
+}
+
+.headTeacherName p {
+	margin-bottom: 0px;
+}
+
+.headTeacher .speech {
+	font-size: 22px;
+}

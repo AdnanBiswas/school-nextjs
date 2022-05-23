@@ -1,0 +1,34 @@
+
+.galleryphotos {
+	margin: 0 -10px;
+	text-align: center;
+}
+
+.galleryphotos img {
+	padding: 5px 10px;
+}
+
+/* 
+.galleryphotos .slick-prev::before {
+	content: ' ';
+} 
+ .galleryphotos .slick-next:before {
+	content: ' ';
+}  */
+
+.galleryphotos a {
+	margin-top: 50px;
+}
+
+
+.section_box h2 {
+	margin-bottom: 20px;
+}
+
+.section_box a {
+	text-decoration: none;
+}
+
+.section_box a:hover {
+	color: wheat;
+}

@@ -1,0 +1,77 @@
+.noticeboard a {
+	text-decoration: none;
+	color: black;
+}
+
+.noticeboard h4 {
+	padding-top: 15px;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.noticeboard svg {
+	padding-bottom: 10px;
+	text-align: center;
+	display: inline-block;
+}
+
+.griditem1{
+	padding: 0 40px;
+}
+.griditem1 a{
+	background-image: linear-gradient(to bottom right, rgba(255, 204, 0, 1), rgba(255, 157, 0, 1));
+}
+
+.griditem2{
+	padding: 0 40px;
+}
+.griditem2 a{
+	background-image: linear-gradient(to bottom right, rgba(255, 209, 238, 1), rgba(246, 27, 128, 1));
+}
+.griditem3{
+	padding: 0 40px;
+}
+
+.griditem3 a{
+	background-image: linear-gradient(to bottom right, rgba(63, 144, 252, 1), rgba(92, 62, 255, 1));
+}
+
+.griditem4{
+	padding: 0 40px;
+}
+.griditem4 a{
+	background-image: linear-gradient(to bottom right, rgba(79, 248, 155, 1), rgba(0, 203, 91, 1));
+}
+
+.morenotice {
+	text-align: right;
+}
+
+.gridContainer {
+	display: grid;
+	grid-template-columns: auto auto;
+
+	margin-top: -41px;
+}
+
+.noticeboards {
+	text-align: center;
+}
+.noticeboards div{
+	margin: 40px;
+}
+.noticeboards div a {
+	padding: 40px 20px;
+	display: block;
+}
+
+.noticeboards div h6 {
+	font-size: larger;
+	color: white;
+}
+.noticeboards div svg{
+	width: 100%!important;
+	height: auto!important;
+}
