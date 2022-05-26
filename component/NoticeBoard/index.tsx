@@ -59,62 +59,44 @@ const NoticeBoard = () => {
                                 <h3>নোটিশ বোর্ড</h3>
                                 <ul className="list-group list-group-flush">
                                     <li className="list-group-item">
-                                        <a href="#">
-                                            <h5>
-                                                এস এস সি পরীক্ষা-২০২২ এর সময়সূচী
-                                            </h5>
-                                            <span>
-                                                <img src="/calendar4.svg" />
-                                                ০৯মার্চ, ২০২২
-                                            </span>
-                                        </a>
+                                        <div className={styles.gridcontainer2}>
+                                            <div className={styles.item1}>
+                                                <img src="/calendar4.svg" /></div>
+                                            <div><h4>এস এস সি পরীক্ষা-২০২২ এর সময়সূচী</h4></div>
+                                            <div><span>০৯মার্চ, ২০২২</span></div>
+                                        </div>
                                     </li>
                                     <li className="list-group-item">
-                                        <a href="#">
-                                            <h5>
-                                                এস এস সি পরীক্ষা-২০২২ এর সময়সূচী
-                                            </h5>
-                                            <span>
-                                                <img src="/calendar4.svg" />
-                                                ০৯মার্চ, ২০২২
-                                            </span>
-                                        </a>
+                                        <div className={styles.gridcontainer2}>
+                                            <div className={styles.item1}><img src="/calendar4.svg" /></div>
+                                            <div><h4>এস এস সি পরীক্ষা-২০২২ এর সময়সূচী</h4></div>
+                                            <div><span>০৯মার্চ, ২০২২</span></div>
+                                        </div>
                                     </li>
                                     <li className="list-group-item">
-                                        <a href="#">
-                                            <h5>
-                                                এস এস সি পরীক্ষা-২০২২ এর সময়সূচী
-                                            </h5>
-                                            <span>
-                                                <img src="/calendar4.svg" />
-                                                ০৯মার্চ, ২০২২
-                                            </span>
-                                        </a>
+                                        <div className={styles.gridcontainer2}>
+                                            <div className={styles.item1}><img src="/calendar4.svg" /></div>
+                                            <div><h4>এস এস সি পরীক্ষা-২০২২ এর সময়সূচী</h4></div>
+                                            <div><span>০৯মার্চ, ২০২২</span></div>
+                                        </div>
                                     </li>
                                     <li className="list-group-item">
-                                        <a href="#">
-                                            <h5>
-                                                এস এস সি পরীক্ষা-২০২২ এর সময়সূচী
-                                            </h5>
-                                            <span>
-                                                <img src="/calendar4.svg" />
-                                                ০৯মার্চ, ২০২২
-                                            </span>
-                                        </a>
+                                        <div className={styles.gridcontainer2}>
+                                            <div className={styles.item1}><img src="/calendar4.svg" /></div>
+                                            <div><h4>এস এস সি পরীক্ষা-২০২২ এর সময়সূচী</h4></div>
+                                            <div><span>০৯মার্চ, ২০২২</span></div>
+                                        </div>
                                     </li>
                                     <li className="list-group-item">
-                                        <a href="#">
-                                            <h5>
-                                                এস এস সি পরীক্ষা-২০২২ এর সময়সূচী
-                                            </h5>
-                                            <span>
-                                                <img src="/calendar4.svg" />
-                                                ০৯মার্চ, ২০২২
-                                            </span>
-                                        </a>
+                                        <div className={styles.gridcontainer2}>
+                                            <div className={styles.item1}><img src="/calendar4.svg" /></div>
+                                            <div><h4>এস এস সি পরীক্ষা-২০২২ এর সময়সূচী</h4></div>
+                                            <div><span>০৯মার্চ, ২০২২</span></div>
+                                        </div>
                                     </li>
-                                    <div className={styles.morenotice}><a href="#">সবগুলো জানতে »</a></div>
+
                                 </ul>
+                                <div className={styles.morenotice}><a href="#">সবগুলো জানতে »</a></div>
 
 
                             </div>

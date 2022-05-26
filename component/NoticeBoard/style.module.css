@@ -7,28 +7,37 @@
 	color: black;
 }
 
-.noticeboard h3 {
+.noticeList h3 {
 	padding: 10px;
 	color: white;
 	font-size: 30px;
 	text-align: center;
-
 	background-image: linear-gradient(to bottom right, rgb(5, 150, 217), rgb(5, 111, 217));
 	border-radius: 10px;
 }
 
-.noticeboard img {
+
+.noticeboards img {
+	padding-bottom: 10px;
+	text-align: center;
+	display: inline-block;
+	height: 100px;
+	width: auto;
+}
+
+/* .griditem2 img {
 	padding-bottom: 10px;
 	text-align: center;
 	display: inline-block;
 	width: 50px;
 	height: auto;
-}
+} */
 
+/* 
 .noticeboard svg {
 	padding-right: 5px;
 	display: inline-block;
-}
+} */
 
 
 .griditem1 a {
@@ -52,7 +61,6 @@
 
 .morenotice {
 	text-align: right;
-
 }
 
 .morenotice a {
@@ -61,7 +69,7 @@
 
 .gridContainer {
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: 50% 50%;
 	margin-top: -41px;
 }
 
@@ -70,12 +78,14 @@
 }
 
 .noticeboards div {
-	margin: 40px;
+	margin: 44px;
 }
 
 .noticeboards div a {
 	padding: 40px 40px;
 	display: block;
+	box-shadow: 0px 0px 8px 2px #c7eaff;
+	border: 1px solid #c7eaff;
 }
 
 .noticeboards div h6 {
@@ -83,20 +93,26 @@
 	color: white;
 }
 
-.noticeboards div svg {
+/* .noticeboards div svg {
 	width: 100% !important;
 	height: auto !important;
-}
+} */
 
 .noticeList {
 	background-color: #F7F8FA;
-	box-shadow: 0px 0px 20px 0px grey;
+	box-shadow: 0px 0px 8px 2px #c7eaff;
 	border-radius: 8px;
 	padding: 8px;
+	border: 1px solid #c7eaff;
 }
 
 .noticeList li {
 	background-color: #F7F8FA;
+}
+
+.noticeList a {
+	display: block;
+	overflow: hidden;
 }
 
 .noticeList a:hover {
@@ -104,6 +120,28 @@
 }
 
 .noticeList img {
-	width: 20px;
-	margin-right: 5px;
+	width: 25px;
+	padding-top: 5px;
+	margin-left: 10px;
+	float: left;
+}
+
+.noticeList h4 {
+	float: left;
+	width: 100%;
+	padding-top: 2px;
+}
+
+.noticeList p {
+	float: left;
+	width: 100%;
+}
+
+.item1 {
+	grid-row: 1 / span 2;
+}
+
+.gridcontainer2 {
+	display: grid;
+	grid-template-columns: 7% 93%;
 }
