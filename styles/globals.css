@@ -1,17 +1,30 @@
-/* header */
-p, a, li, h2, h4, h5{
+/* background color of whole page */
+.pageBG {
+	background-color: #F5F8FF;
+}
+
+/* font */
+p,
+a,
+li,
+h2,
+h3,
+h5 {
 	font-family: 'Kalpurush', sans-serif;
 }
+
 .header {
 	text-align: center;
 	font-family: 'Kalpurush', sans-serif;
 	padding-top: 30px;
-	
+
 }
-.header h1{
+
+.header h1 {
 	font-size: 50px;
 }
-.header p{
+
+.header p {
 	margin-top: -1rem;
 }
 
@@ -25,23 +38,25 @@ p, a, li, h2, h4, h5{
 	color: white;
 }
 
+.headermid img {
+	width: 15px;
+	padding-bottom: 3px;
+	margin-right: 2px;
+}
+
 .paraHeader {
 	text-align: center;
+	margin-top: 100px;
 	padding-bottom: 30px;
-	color: var(--brand-blue);
+	color: #056FD9;
 	font-size: 60px;
 }
 
-/* .grid {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	max-width: 800px;
-} */
+
 
 /* topnav */
 .topnavbar {
+	margin-top: 20px;
 	background-color: rgb(5, 157, 217);
 	font-size: larger;
 }
@@ -49,12 +64,13 @@ p, a, li, h2, h4, h5{
 .topnavbar a {
 	color: black;
 }
-.topnavbar .dropdown-item:hover{
+
+.topnavbar .dropdown-item:hover {
 	color: red;
 }
 
 .topnavbar a:hover {
-	color: red;
+	color: rgb(255, 255, 255);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -65,7 +81,8 @@ p, a, li, h2, h4, h5{
 .section-cont {
 	padding: 60px 0;
 }
-.section-cont p{
+
+.section-cont p {
 	text-align: justify;
 }
 
@@ -95,7 +112,7 @@ p, a, li, h2, h4, h5{
 }
 
 
-.slick-prev {
+.slick-prev, .slick-prev:hover {
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffcc33'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
 	background-repeat: no-repeat;
 	width: 100px;
@@ -103,7 +120,12 @@ p, a, li, h2, h4, h5{
 	left: -50px;
 }
 
-.slick-next {
+.slick-prev:before,
+.slick-next:before {
+	content: ' ';
+}
+
+.slick-next, .slick-next:hover {
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffcc33'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 	background-repeat: no-repeat;
 	width: 100px;
@@ -111,7 +133,6 @@ p, a, li, h2, h4, h5{
 	right: -100px;
 }
 
-.highlightBG{
-	background-image: linear-gradient(to bottom right, rgb(5, 150, 217), rgb(5, 111, 217));
+.list-group-item {
+	padding-right: 0px;
 }
-

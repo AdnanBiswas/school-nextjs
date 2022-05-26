@@ -30,15 +30,16 @@ const Home: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
+			<div className="pageBG">
 			<Header />
 
 			<Navbar />
 
-			<SlideShow />
+			{/* <SlideShow /> */}
 
 			<SwiperSlideShow/>
 
-			<LatestNotice />
+			{/* <LatestNotice /> */}
 
 			{/* স্কুল ইতিহাস */}
 			<SchoolHistory/>
@@ -46,7 +47,7 @@ const Home: NextPage = () => {
 			<NoticeBoard/>
 
 			{/* শিক্ষার্থীদের উপস্থিতি */}
-			<StudentAttendance/>
+			{/* <StudentAttendance/> */}
 
 
 			{/* প্রধান শিক্ষকের বানী */}
@@ -55,7 +56,7 @@ const Home: NextPage = () => {
 
 			{/* গ্যালারি */}
 			<Gallery/>
-
+			</div>
 			<Footer/>
 
 		</>

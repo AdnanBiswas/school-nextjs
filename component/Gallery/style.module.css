@@ -1,23 +1,13 @@
 
+
+
 .galleryphotos {
 	margin: 0 -10px;
 	text-align: center;
 }
 
 .galleryphotos img {
-	padding: 5px 10px;
-}
-
-/* 
-.galleryphotos .slick-prev::before {
-	content: ' ';
-} 
- .galleryphotos .slick-next:before {
-	content: ' ';
-}  */
-
-.galleryphotos a {
-	margin-top: 50px;
+	border-radius: 10px;
 }
 
 
@@ -31,4 +21,15 @@
 
 .section_box a:hover {
 	color: wheat;
+}
+
+.photos {
+	padding: 5px 10px;
+}
+
+.moreButton {
+	padding: 10px 40px;
+	font-family: 'Kalpurush', sans-serif;
+	font-size: 18px;
+	margin: 70px 0 130px 0;
 }

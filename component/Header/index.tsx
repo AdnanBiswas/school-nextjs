@@ -10,13 +10,15 @@ const Header = () => {
 							<img src='/SchoolLogo.jpg' alt='SchoolLogo' width={150}></img>
 						</div>
 						<div className="col-md-8">
-							<h1>সত্রাজিতপুর উচ্চ বিদ্যালয়</h1>
-							<p>
-								চাঁপাই নবাবগঞ্জ, সত্রাজিতপুর, শিবগঞ্জ ।  01740933864
-							</p>
-							<p>
-								sh124606@gmail.com
-							</p>
+							<div className="headermid">
+								<h1>সত্রাজিতপুর উচ্চ বিদ্যালয়</h1>
+								<img src="/pin.svg" /><span>চাঁপাই নবাবগঞ্জ, সত্রাজিতপুর, শিবগঞ্জ   </span> <img src="/phonecall.svg" /><span>01740933864</span>
+								<div>
+									<img src="/email.svg" />
+									<span>sh124606@gmail.com
+									</span>
+								</div>
+							</div>
 						</div>
 						<div className="col-md-2">
 							<a href="#" className="btn btn-primary">লগ ইন</a>

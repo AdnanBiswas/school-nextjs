@@ -4,38 +4,62 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 
 
 // import required modules
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 export default function App() {
   return (
     <>
       <Swiper
-        cssMode={true}
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
         navigation={true}
-        pagination={true}
-        mousewheel={true}
-        keyboard={true}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
+
         <SwiperSlide>
-          <div className="item1"><img src="/SchoolPhoto.jpg"></img>
+          <div className="slideSize slide1">
+            <img src="/SchoolPhoto.jpg"></img>
+          </div>
+          <div className="carousel-caption d-none d-md-block">
+            <h4>বার্ষিক শিক্ষক সম্মেলন ২০২২</h4>
+            <p>স্থানঃ ডাঃ মঈনউদ্দিন আহমেদ(মন্টু) মিলনায়তন</p>
+            <a href="#" className="btn btn-primary">আরও দেখুন</a>
           </div>
         </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+
+        <SwiperSlide>
+          <div className="slideSize slide2">
+            <img src="/image2.jpg"></img>
+          </div>
+          <div className="carousel-caption d-none d-md-block">
+            <h4>বার্ষিক শিক্ষক সম্মেলন ২০২২</h4>
+            <p>স্থানঃ ডাঃ মঈনউদ্দিন আহমেদ(মন্টু) মিলনায়তন</p>
+            <a href="#" className="btn btn-primary">আরও দেখুন</a>
+          </div></SwiperSlide>
+
+        <SwiperSlide><div className="slideSize slide3">
+          <img src="/image3.jpg"></img>
+        </div>
+          <div className="carousel-caption d-none d-md-block">
+            <h4>বার্ষিক শিক্ষক সম্মেলন ২০২২</h4>
+            <p>স্থানঃ ডাঃ মঈনউদ্দিন আহমেদ(মন্টু) মিলনায়তন</p>
+            <a href="#" className="btn btn-primary">আরও দেখুন</a>
+          </div>
+        </SwiperSlide>
       </Swiper>
     </>
   );
