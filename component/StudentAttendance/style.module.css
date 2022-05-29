@@ -1,0 +1,23 @@
+.gridcontainer {
+	display: grid;
+	grid-template-columns: 30% 70%;
+}
+.gridcontainer h4{
+	padding-top: 10px;
+}
+.item1 {
+	grid-row: 1 / span 2;
+}
+.item1 img{
+    height: 80px;
+    width: auto;
+}
+
+.item2 {
+	grid-row: 1 / span 2;
+}
+.item2 img{
+    height: 80px;
+    width: auto;
+    margin-left: -40px;
+}

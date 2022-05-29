@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./style.module.css";
+import Link from 'next/link'
 
 const NoticeBoard = () => {
 
@@ -10,7 +11,7 @@ const NoticeBoard = () => {
             <div className={`${styles.noticeboard} section_box section-cont`}>
                 <div className="container">
                     <div className="row">
-                        <div className="col-6">
+                        <div className="col-md-6">
                             <div className={styles.gridContainer}>
                                 <div className={`${styles.noticeboards} `}>
                                     <div className={styles.griditem1}>
@@ -59,41 +60,78 @@ const NoticeBoard = () => {
                                 <h3>নোটিশ বোর্ড</h3>
                                 <ul className="list-group list-group-flush">
                                     <li className="list-group-item">
-                                        <div className={styles.gridcontainer2}>
-                                            <div className={styles.item1}>
-                                                <img src="/calendar4.svg" /></div>
-                                            <div><h4>এস এস সি পরীক্ষা-২০২২ এর সময়সূচী</h4></div>
-                                            <div><span>০৯মার্চ, ২০২২</span></div>
-                                        </div>
+                                        <Link href="#">
+                                        <a>
+                                            <div className={styles.gridcontainer2}>
+                                                <div className={styles.item1}>
+                                                    <img src="/calendar4.svg" /></div>
+                                                <h4>এস এস সি পরীক্ষা-২০২২ এর সময়সূচী</h4>
+                                                <div><span>০৯মার্চ, ২০২২</span></div>
+                                            </div>
+                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="list-group-item">
-                                        <div className={styles.gridcontainer2}>
-                                            <div className={styles.item1}><img src="/calendar4.svg" /></div>
-                                            <div><h4>এস এস সি পরীক্ষা-২০২২ এর সময়সূচী</h4></div>
-                                            <div><span>০৯মার্চ, ২০২২</span></div>
-                                        </div>
+                                        <Link href="#">
+                                        <a>
+                                            <div className={styles.gridcontainer2}>
+                                                <div className={styles.item1}>
+                                                    <img src="/calendar4.svg" /></div>
+                                                <h4>এস এস সি পরীক্ষা-২০২২ এর সময়সূচী</h4>
+                                                <div><span>০৯মার্চ, ২০২২</span></div>
+                                            </div>
+                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="list-group-item">
-                                        <div className={styles.gridcontainer2}>
-                                            <div className={styles.item1}><img src="/calendar4.svg" /></div>
-                                            <div><h4>এস এস সি পরীক্ষা-২০২২ এর সময়সূচী</h4></div>
-                                            <div><span>০৯মার্চ, ২০২২</span></div>
-                                        </div>
+                                        <Link href="#">
+                                        <a>
+                                            <div className={styles.gridcontainer2}>
+                                                <div className={styles.item1}>
+                                                    <img src="/calendar4.svg" /></div>
+                                                <h4>এস এস সি পরীক্ষা-২০২২ এর সময়সূচী</h4>
+                                                <div><span>০৯মার্চ, ২০২২</span></div>
+                                            </div>
+                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="list-group-item">
-                                        <div className={styles.gridcontainer2}>
-                                            <div className={styles.item1}><img src="/calendar4.svg" /></div>
-                                            <div><h4>এস এস সি পরীক্ষা-২০২২ এর সময়সূচী</h4></div>
-                                            <div><span>০৯মার্চ, ২০২২</span></div>
-                                        </div>
+                                        <Link href="#">
+                                        <a>
+                                            <div className={styles.gridcontainer2}>
+                                                <div className={styles.item1}>
+                                                    <img src="/calendar4.svg" /></div>
+                                                <h4>এস এস সি পরীক্ষা-২০২২ এর সময়সূচী</h4>
+                                                <div><span>০৯মার্চ, ২০২২</span></div>
+                                            </div>
+                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="list-group-item">
-                                        <div className={styles.gridcontainer2}>
-                                            <div className={styles.item1}><img src="/calendar4.svg" /></div>
-                                            <div><h4>এস এস সি পরীক্ষা-২০২২ এর সময়সূচী</h4></div>
-                                            <div><span>০৯মার্চ, ২০২২</span></div>
-                                        </div>
+                                        <Link href="#">
+                                        <a>
+                                            <div className={styles.gridcontainer2}>
+                                                <div className={styles.item1}>
+                                                    <img src="/calendar4.svg" /></div>
+                                                <h4>এস এস সি পরীক্ষা-২০২২ এর সময়সূচী</h4>
+                                                <div><span>০৯মার্চ, ২০২২</span></div>
+                                            </div>
+                                        </a>
+                                        </Link>
                                     </li>
+                                    <li className="list-group-item">
+                                        <Link href="#">
+                                        <a>
+                                            <div className={styles.gridcontainer2}>
+                                                <div className={styles.item1}>
+                                                    <img src="/calendar4.svg" /></div>
+                                                <h4>এস এস সি পরীক্ষা-২০২২ এর সময়সূচী</h4>
+                                                <div><span>০৯মার্চ, ২০২২</span></div>
+                                            </div>
+                                        </a>
+                                        </Link>
+                                    </li>
+                                    
 
                                 </ul>
                                 <div className={styles.morenotice}><a href="#">সবগুলো জানতে »</a></div>

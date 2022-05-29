@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
 
-    return (
-        <>
-        <section className="footer">
+	return (
+		<>
+			<section className="footer">
 				<div className="container">
 					<div className="row">
 						<div className="col-3">
@@ -50,9 +50,19 @@ const Footer = () => {
 					</div>
 				</div>
 			</section>
+			<div className="ending">
+				<div className="container">
+					<div className="copyright">
+						<p>
+							Copyright © 2022 Sotrajitpur High School.
+							Powered by <span>Everexpert</span>
+						</p>
+					</div>
+				</div>
+			</div>
 
-        </>
+		</>
 
-    )
+	)
 }
 export default Footer

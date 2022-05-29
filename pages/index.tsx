@@ -47,7 +47,7 @@ const Home: NextPage = () => {
 			<NoticeBoard/>
 
 			{/* শিক্ষার্থীদের উপস্থিতি */}
-			{/* <StudentAttendance/> */}
+			<StudentAttendance/>
 
 
 			{/* প্রধান শিক্ষকের বানী */}
@@ -58,7 +58,6 @@ const Home: NextPage = () => {
 			<Gallery/>
 			</div>
 			<Footer/>
-
 		</>
 	)
 }
