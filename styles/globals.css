@@ -162,3 +162,61 @@ h5 {
 .list-group-item {
 	padding-right: 0px;
 }
+
+.pie2 {
+	--w: 220px;
+	width: var(--w);
+	aspect-ratio: 1;
+	position: relative;
+	display: inline-grid;
+	place-content: center;
+	margin: 5px;
+	--p: 70;
+	--b: 20px;
+	--c: #056FD9;
+}
+
+.pie2:before {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	inset: 0;
+	background: conic-gradient(var(--c) calc(var(--p)*1%), #0000 0);
+	-webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+	background:
+		radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b) var(--b) no-repeat,
+		conic-gradient(var(--c) calc(var(--p)*1%), #0000 0);
+	mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+}
+
+.pie2:after {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	inset: calc(50% - var(--b)/2);
+	background: var(--c);
+	transform: rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+}
+
+.pie1 {
+	--w: 220px;
+	width: var(--w);
+	aspect-ratio: 1;
+	position: relative;
+	display: inline-grid;
+	place-content: center;
+	margin: 5px;
+	--p: 100;
+	--b: 20px;
+	--c: #F1B71C;
+}
+
+.pie1:before {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	inset: 0;
+	background: conic-gradient(var(--c) calc(var(--p)*1%), #0000 0);
+	-webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+	mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+}
