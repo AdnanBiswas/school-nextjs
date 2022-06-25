@@ -1,27 +1,20 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import React, { Component } from "react";
-// import styles from '../styles/Home.module.css';
 import Header from '../component/Header';
 import Navbar from '../component/Navbar';
-import SlideShow from '../component/SlideShow';
 import SwiperSlideShow from '../component/SwiperSlideShow';
 import LatestNotice from '../component/LatestNotice';
 import SchoolHistory from '../component/SchoolHistory';
 import NoticeBoard from '../component/NoticeBoard';
 import StudentAttendance from '../component/StudentAttendance';
 import HeadTeacher from '../component/HeadTeacher';
-import Gallery from '../component/Gallery';
+import HomePageGallery from '../component/HomePageGallery';
 import Footer from '../component/Footer'; 
 
 
 const Home: NextPage = () => {
-	
-	const stop = () => {
-	}
-	const start = () => {
-	}
-
+	 
 	return (
 		<>
 			<Head>
@@ -55,7 +48,7 @@ const Home: NextPage = () => {
 
 
 			{/* গ্যালারি */}
-			<Gallery/>
+			<HomePageGallery/>
 			</div>
 			<Footer/>
 		</>

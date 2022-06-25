@@ -1,16 +1,23 @@
 .gridcontainer {
     display: grid;
     grid-template-columns: 40% 60%;
-    padding-top: 70px;
+    margin: 20px;
 }
 
 .gridcontainer h4 {
     padding-top: 10px;
     font-size: 40px;
 }
+
 .gridcontainer p {
     font-size: 25px;
 }
+
+.griditems {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
 
 .item1 {
     grid-row: 1 / span 2;
@@ -31,41 +38,55 @@
     margin-left: -40px;
 }
 
-.piechart {
+
+.piechartCont {
     position: relative;
-    text-align: center;
-}
-.piechart2 span {
-    font-size: 15px;
-    font-weight: bold;
-}
-.piechart h4 {
-    font-size: 30px;
-    font-weight: bold;
-}
-.piechart1 {
-    position: absolute;
 }
 
+.piechart {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin-right: 50px;
+    margin-left: auto;
+}
+
+
+.piechart h4 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.piechart1,
 .piechart2 {
     position: absolute;
 }
 
-.absent {
-    position: absolute;
-    left: 37px;
-    top: 50px;
+.piechart2 span {
+    font-size: 22px;
+    font-weight: bold;
 }
+
+
+.attandanceStat {
+    position: relative;
+    left: 400px;
+    right: 0px;
+    top: 57px;
+}
+
 
 .absent svg {
     width: 15px;
     height: auto;
     fill: #F1B71C;
 }
-.absent span{
+
+.absent span {
     font-size: 20px;
     padding-left: 10px;
 }
+
 
 .present svg {
     width: 15px;
@@ -73,12 +94,55 @@
     fill: #056FD9;
 }
 
-.present {
-    position: absolute;
-    top: 175px;
-    left: 37px;
-}
 .present span {
     font-size: 20px;
     padding-left: 10px;
+}
+
+
+@media (max-width: 1150px) {
+    .gridcontainer {
+        display: block;
+        text-align: center;
+    }
+
+    .gridcontainer p {
+        text-align: center;
+    }
+
+    .gridcontainer h4 {
+        font-size: 30px;
+    }
+
+    .item2 img {
+        margin-left: -5px;
+    }
+
+    .piechartCont {
+        position: static;
+        margin-bottom: 30px;
+    }
+
+    .attandanceStat {
+        left: auto;
+        position: static;
+        margin: 40px auto 0;
+        text-align: center;
+    }
+
+    .piechart {
+        position: relative;
+        width: 240px;
+        height: 240px;
+        margin: 0 auto;
+    }
+
+    .absent {
+        top: auto;
+    }
+
+    .present {
+        top: auto;
+    }
+
 }

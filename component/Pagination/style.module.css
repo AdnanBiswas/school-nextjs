@@ -1,0 +1,12 @@
+.pageNumber{
+	margin: 50px 0;
+}
+.pageNumber nav{
+	display: flex;
+    justify-content: center;
+}
+
+.pageNumber li{
+	margin: 0 3px;
+	border: 2px solid #059DD9;
+}

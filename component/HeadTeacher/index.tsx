@@ -10,10 +10,10 @@ const HeadTeacher = () => {
                 <div className="container">
                     <h2 className="paraHeader">প্রধান শিক্ষকের বানী</h2>
                     <div className="row">
-                        <div className="col-3">
+                        <div className="col-md-3">
                             <img src='/shatrajitpur-high-school-head-teacher.jpg' alt='SchoolLogo'></img>
                         </div>
-                        <div className="col-9">
+                        <div className="col-md-9">
                             <div className={styles.speech}>
                                 <p>
                                     সত্রাজিতপুর উচ্চ বিদ্যালয় ওয়েবসাইট খুলে সরকারের ডিজিটালাইজেশন কার্যক্রমে অন্তর্ভুক্ত হয়েছে এবং সরকারের ভিশন ২০২১ এর সাথে একাত্মতা প্রকাশ করেছে।

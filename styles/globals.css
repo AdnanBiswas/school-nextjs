@@ -14,29 +14,36 @@ h5 {
 	font-family: 'Kalpurush', sans-serif;
 }
 
+a {
+	text-decoration: none;
+}
+
 .header {
 	text-align: center;
 	font-family: 'Kalpurush', sans-serif;
-	padding-top: 30px;
+	padding-top: 5px;
 
 }
 
 .header h1 {
 	font-size: 50px;
+	margin: 0;
 }
 
 .header p {
-	margin-top: -1rem;
+	margin: 0;
 }
 
 .header .btn-primary {
 	background-color: rgb(241, 183, 28);
 	color: black;
 	border-color: rgb(241, 183, 28);
+	margin-top: 20px;
 }
 
 .header .btn-primary:hover {
 	color: white;
+	box-shadow: 2px 2px 12px 0px #856103;
 }
 
 .headermid img {
@@ -45,46 +52,102 @@ h5 {
 	margin-right: 2px;
 }
 
+.headermid p span {
+	margin: 0 2px;
+}
+
+.headermid p span img {
+	margin-right: 5px;
+	height: 15px;
+}
+
+.schoolLogo {
+	margin-top: 20px;
+}
+
 .paraHeader {
 	text-align: center;
-	margin-top: 100px;
 	padding-bottom: 30px;
 	color: #056FD9;
 	font-size: 60px;
+	margin: 0;
 }
-
 
 
 /* topnav */
 .topnavbar {
-	margin-top: 20px;
 	background-color: rgb(5, 157, 217);
-	font-size: larger;
+	font-size: 1.3rem;
+	margin-top: 10px;
+}
+
+@media (max-width: 550px) {
+	.topnavbar {
+		display: none;
+	}
+	.dropdown-menu.show{
+		position: relative;
+		inset: 0px auto auto 0px;
+		margin: 0px;
+		transform: translate3d(0px, 0px, 0px);
+	}
 }
 
 .topnavbar a {
-	color: black;
+	color: white;
 }
 
 .topnavbar .dropdown-item:hover {
-	color: red;
+	color: rgb(0, 174, 255);
 }
 
 .topnavbar a:hover {
 	color: rgb(255, 255, 255);
 }
 
+.navbar-expand-lg {
+	padding: 0px;
+}
+
+.navbar>.container-fluid {
+	background-color: #059dd9;
+}
+
 .navbar-expand-lg .navbar-nav .nav-link {
-	margin: 5px 45px;
+	margin: 0px 0px;
+	padding: 10px 20px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+	background: white;
+	color: rgb(0, 174, 255);
+}
+
+.dropdown-menu {
+	width: 100%;
+	border-radius: 0 0 10px 10px;
+	border: none;
+	box-shadow: 2px 7px 12px -4px #094056;
+	background: #059dd9;
+}
+
+.dropdown-menu.show {
+	top: 99%;
 }
 
 /* common */
 .section-cont {
-	padding: 60px 0;
+	padding: 100px 0;
 }
 
 .section-cont p {
 	text-align: justify;
+}
+
+@media (max-width: 550px) {
+	.section-cont {
+		padding: 60px 0;
+	}
 }
 
 
@@ -116,6 +179,31 @@ h5 {
 	font-weight: bold;
 }
 
+.footerschoollogo{
+	text-align: center;
+}
+
+.footerschoollogo img {
+	padding: 15px 0;
+}
+
+@media (max-width: 550px) {
+	.footerschoollogo img {
+		padding: 10px 0;
+	}
+	.footerschoollogo{
+		margin-bottom: 15px;
+	}
+}
+
+.footerschoollogo p {
+	margin: 0;
+}
+
+.emergencyContacts {
+	text-align: center;
+}
+
 .ending {
 	background-color: orange;
 }
@@ -123,19 +211,20 @@ h5 {
 .copyright {
 	text-align: center;
 	font-size: 13px;
+	padding: 3px 0;
 }
 
 .copyright p {
 	color: black;
-	font-family: 'Kalpurush', sans-serif;
+	margin: 0;
+	font-family: monospace;
 }
 
 .copyright span {
 	color: #0f7344;
-	font-family: 'Kalpurush', sans-serif;
 }
 
-
+/* HomePage Gallery */
 .slick-prev,
 .slick-prev:hover {
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffcc33'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
@@ -159,12 +248,49 @@ h5 {
 	right: -100px;
 }
 
+@media (max-width: 1100px) {
+	.slick-next, .slick-next:hover {
+		width: 42px;
+		height: 50px;
+		right: -30px;
+	}
+	.slick-prev, .slick-prev:hover {
+		width: 42px;
+		height: 50px;
+		left: -30px;
+	}
+}
+
 .list-group-item {
 	padding-right: 0px;
 }
 
+/* Attendence piechart */
+.pie1 {
+	--w: 300px;
+	width: var(--w);
+	aspect-ratio: 1;
+	position: relative;
+	display: inline-grid;
+	place-content: center;
+	margin: 5px;
+	--p: 100;
+	--b: 20px;
+	--c: #F1B71C;
+}
+
+.pie1:before {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	inset: 0;
+	background: conic-gradient(var(--c) calc(var(--p)*1%), #0000 0);
+	-webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+	mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+}
+
 .pie2 {
-	--w: 220px;
+	--w: 300px;
 	width: var(--w);
 	aspect-ratio: 1;
 	position: relative;
@@ -198,25 +324,72 @@ h5 {
 	transform: rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
 }
 
-.pie1 {
-	--w: 220px;
-	width: var(--w);
-	aspect-ratio: 1;
-	position: relative;
-	display: inline-grid;
-	place-content: center;
-	margin: 5px;
-	--p: 100;
-	--b: 20px;
-	--c: #F1B71C;
+@media (max-width: 1100px) {
+	.pie1, .pie2 {
+		--w: 240px;
+		width: var(--w);
+	}
 }
 
-.pie1:before {
-	content: "";
-	position: absolute;
-	border-radius: 50%;
-	inset: 0;
-	background: conic-gradient(var(--c) calc(var(--p)*1%), #0000 0);
-	-webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
-	mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+
+/* news-event page */
+.newspage h2 {
+	text-align: center;
+	padding-top: 50px;
+	font-size: 50px;
+	color: #056FD9;
+}
+
+.newspage p {
+	text-align: center;
+	color: #8E8E8E;
+	font-size: 20px;
+	padding-bottom: 40px;
+}
+
+.sidenotice {
+	margin-top: 10px;
+}
+
+.newspage iframe {
+	border-radius: 10px;
+	margin-top: 10px;
+	box-shadow: 0px 0px 8px 2px #c7eaff;
+}
+
+/* Responsive */
+@media (max-width: 550px) {
+	.section-cont h2 {
+		font-size: 45px;
+	}
+}
+
+/* Photo Gallery */
+
+.my-masonry-grid {
+	display: -webkit-box;
+	/* Not needed if autoprefixing */
+	display: -ms-flexbox;
+	/* Not needed if autoprefixing */
+	display: flex;
+	margin-left: -30px;
+	/* gutter size offset */
+	width: auto;
+}
+
+.my-masonry-grid_column {
+	padding-left: 30px;
+	/* gutter size */
+	background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column>div {
+	/* change div to reference your elements you put in <Masonry> */
+	background: grey;
+	margin-bottom: 30px;
+}
+
+.gallery-cont {
+	padding: 0 50px;
 }

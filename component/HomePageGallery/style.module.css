@@ -1,0 +1,35 @@
+
+
+
+.galleryphotos {
+	margin: 0 -10px;
+	text-align: center;
+}
+
+.galleryphotos img {
+	border-radius: 10px;
+}
+
+
+.section_box h2 {
+	margin-bottom: 20px;
+}
+
+.section_box a {
+	text-decoration: none;
+}
+
+.section_box a:hover {
+	color: wheat;
+}
+
+.photos {
+	padding: 5px 10px;
+}
+
+.moreButton {
+	padding: 10px 40px;
+	font-family: 'Kalpurush', sans-serif;
+	font-size: 18px;
+	margin-top: 2rem;
+}
